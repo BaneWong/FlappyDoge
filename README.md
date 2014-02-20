@@ -1,8 +1,6 @@
 <img src="Cover.png" width="500" />
 
 
-**Introducing Flappy Doge** - Yet another Flappy Bird clone.
-
 ## Features
 
 - iPhone support
