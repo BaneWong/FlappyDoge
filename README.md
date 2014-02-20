@@ -1,6 +1,8 @@
 <img src="Cover.png" width="500" />
 
 
+**Introducing Flappy Doge** - Another Flappy Bird Clone for iOS.
+
 ## Features
 
 - iPhone support
@@ -16,7 +18,7 @@
 
 The entire code is based on <a href="https://github.com/nathanborror">nathanborror's</a> <a href="https://github.com/nathanborror/FlapFlap">FlapFlap project</a>. All credit goes to him.
 
-The entire idea of the game is based on the Flappy Doge project created by the guys over at <a href="http://dogetek.co">Dog Tek</a>.
+The entire idea of the game is based on the Flappy Doge project created by the guys over at <a href="http://dogetek.co">Doge Tek</a>.
 
 ## Final Note
 
