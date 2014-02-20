@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D8FCAA6F18A2BB6B004B93C1"
-               BuildableName = "FlapFlap.app"
+               BuildableName = "Flappy Doge.app"
                BlueprintName = "FlapFlap"
-               ReferencedContainer = "container:FlapFlap.xcodeproj">
+               ReferencedContainer = "container:Flappy Doge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D8FCAA8A18A2BB6B004B93C1"
-               BuildableName = "FlapFlapTests.xctest"
-               BlueprintName = "FlapFlapTests"
-               ReferencedContainer = "container:FlapFlap.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8FCAA6F18A2BB6B004B93C1"
-            BuildableName = "FlapFlap.app"
+            BuildableName = "Flappy Doge.app"
             BlueprintName = "FlapFlap"
-            ReferencedContainer = "container:FlapFlap.xcodeproj">
+            ReferencedContainer = "container:Flappy Doge.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8FCAA6F18A2BB6B004B93C1"
-            BuildableName = "FlapFlap.app"
+            BuildableName = "Flappy Doge.app"
             BlueprintName = "FlapFlap"
-            ReferencedContainer = "container:FlapFlap.xcodeproj">
+            ReferencedContainer = "container:Flappy Doge.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8FCAA6F18A2BB6B004B93C1"
-            BuildableName = "FlapFlap.app"
+            BuildableName = "Flappy Doge.app"
             BlueprintName = "FlapFlap"
-            ReferencedContainer = "container:FlapFlap.xcodeproj">
+            ReferencedContainer = "container:Flappy Doge.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,9 +1,11 @@
 //
 //  MainScene.m
-//  FlapFlap
+//  Flappy Doge
 //
-//  Created by Nathan Borror on 2/5/14.
-//  Copyright (c) 2014 Nathan Borror. All rights reserved.
+//  Created by Justin Bush on 2/14/14.
+//  Copyright (c) 2014 Justin Bush. All rights reserved.
+//  Based on Nathan Borror's FlapFlap. All credit goes to him.
+//  Based on Flappy Doge by the guys over at Doge Tek.
 //
 
 #import "MainScene.h"
@@ -21,7 +23,7 @@ static const CGFloat kMaxVelocity = 400;
 
 static const CGFloat kPipeSpeed = 3;
 static const CGFloat kPipeWidth = 56.0;
-static const CGFloat kPipeGap = 130;
+static const CGFloat kPipeGap = 110;
 static const CGFloat kPipeFrequency = 1.5;
 
 static const CGFloat kGroundHeight = 56.0;
@@ -41,6 +43,7 @@ static const CGFloat randomFloat(CGFloat Min, CGFloat Max){
   NSTimer *_scoreTimer;
   SKAction *_pipeSound;
   SKAction *_punchSound;
+  SKAction *_windSound;
 }
 
 - (id)initWithSize:(CGSize)size
@@ -50,11 +53,19 @@ static const CGFloat randomFloat(CGFloat Min, CGFloat Max){
 
     srand((time(nil) % kNumLevels)*10000);
 
-    [self setBackgroundColor:[SKColor colorWithRed:.69 green:.84 blue:.97 alpha:1]];
+    [self setBackgroundColor:[SKColor colorWithRed:0.98 green:0.50 blue:0.98 alpha:1.0]];
 
     [self.physicsWorld setGravity:CGVectorMake(0, kGravity)];
     [self.physicsWorld setContactDelegate:self];
-
+    
+    /*
+     
+    SKSpriteNode *moon = [SKSpriteNode spriteNodeWithImageNamed:@"Moon"];
+    [moon setPosition:CGPointMake(100, self.size.height - (moon.size.height*3))];
+    [self addChild:moon];
+     
+    */
+       
     SKSpriteNode *cloud1 = [SKSpriteNode spriteNodeWithImageNamed:@"Cloud"];
     [cloud1 setPosition:CGPointMake(100, self.size.height - (cloud1.size.height*3))];
     [self addChild:cloud1];
@@ -62,7 +73,7 @@ static const CGFloat randomFloat(CGFloat Min, CGFloat Max){
     SKSpriteNode *cloud2 = [SKSpriteNode spriteNodeWithImageNamed:@"Cloud"];
     [cloud2 setPosition:CGPointMake(self.size.width - (cloud2.size.width/2) + 50, self.size.height - (cloud2.size.height*5))];
     [self addChild:cloud2];
-
+      
     _ground = [SKSpriteNode spriteNodeWithImageNamed:@"Ground"];
     [_ground setCenterRect:CGRectMake(26.0/kGroundHeight, 26.0/kGroundHeight, 4.0/kGroundHeight, 4.0/kGroundHeight)];
     [_ground setXScale:self.size.width/kGroundHeight];
@@ -75,7 +86,7 @@ static const CGFloat randomFloat(CGFloat Min, CGFloat Max){
     [_ground.physicsBody setAffectedByGravity:NO];
     [_ground.physicsBody setDynamic:NO];
 
-    _scoreLabel = [[SKLabelNode alloc] initWithFontNamed:@"Helvetica"];
+    _scoreLabel = [[SKLabelNode alloc] initWithFontNamed:@"04b19"];
     [_scoreLabel setPosition:CGPointMake(self.size.width/2, self.size.height-50)];
     [_scoreLabel setText:[NSString stringWithFormat:@"%@", [NSNumber numberWithInteger:_score]]];
     [self addChild:_scoreLabel];
@@ -86,8 +97,9 @@ static const CGFloat randomFloat(CGFloat Min, CGFloat Max){
 
     [NSTimer scheduledTimerWithTimeInterval:kPipeFrequency target:self selector:@selector(startScoreTimer) userInfo:nil repeats:NO];
       
-    _pipeSound = [SKAction playSoundFileNamed:@"pipe.mp3" waitForCompletion:NO];
-    _punchSound = [SKAction playSoundFileNamed:@"punch3.mp3" waitForCompletion:NO];
+    _pipeSound = [SKAction playSoundFileNamed:@"coin.mp3" waitForCompletion:NO];
+    _punchSound = [SKAction playSoundFileNamed:@"punch.mp3" waitForCompletion:NO];
+    _windSound = [SKAction playSoundFileNamed:@"wind.mp3" waitForCompletion:NO];
   }
   return self;
 }
@@ -168,11 +180,36 @@ static const CGFloat randomFloat(CGFloat Min, CGFloat Max){
   _score++;
   [_scoreLabel setText:[NSString stringWithFormat:@"%@", [NSNumber numberWithInteger:_score]]];
   [self runAction:_pipeSound];
+    
+    if (_score == 10) {
+        [self setBackgroundColor:[SKColor colorWithRed:0.60 green:0.00 blue:1.00 alpha:1.0]];
+    }
+    
+    else if (_score == 20) {
+        [self setBackgroundColor:[SKColor colorWithRed:0.00 green:0.45 blue:1.00 alpha:1.0]];
+    }
+    
+    else if (_score == 30) {
+        [self setBackgroundColor:[SKColor colorWithRed:0.00 green:0.80 blue:0.00 alpha:1.0]];
+    }
+    
+    else if (_score == 40) {
+        [self setBackgroundColor:[SKColor colorWithRed:0.95 green:0.00 blue:0.00 alpha:1.0]];
+    }
+    
+    else if (_score == 50) {
+        [self setBackgroundColor:[SKColor colorWithRed:0.00 green:0.45 blue:1.00 alpha:1.0]];
+    }
+    
+    else if (_score == 50) {
+        [self setBackgroundColor:[SKColor colorWithRed:0.60 green:0.00 blue:1.00 alpha:1.0]];
+    }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
   [_player.physicsBody setVelocity:CGVectorMake(_player.physicsBody.velocity.dx, kMaxVelocity)];
+  [self runAction:_windSound];
 }
 
 - (void)update:(NSTimeInterval)currentTime

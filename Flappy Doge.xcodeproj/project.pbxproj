@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D60948318AB3E03005AB89A /* wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D60948218AB3E03005AB89A /* wind.mp3 */; };
+		4D76BCA518AAE44B00151570 /* punch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D76BCA418AAE44B00151570 /* punch.mp3 */; };
+		4D76BCA818AAE5F400151570 /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D76BCA718AAE5F400151570 /* coin.mp3 */; };
+		4DDB426B18AB2091006D36E3 /* 04B_19__.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DDB426A18AB2082006D36E3 /* 04B_19__.ttf */; };
 		D891AAF018A701AD0067BB8C /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = D891AAEF18A701AD0067BB8C /* Player.m */; };
 		D891AAF318A701D40067BB8C /* Obstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = D891AAF218A701D40067BB8C /* Obstacle.m */; };
 		D891AAF618A884D50067BB8C /* NewGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D891AAF518A884D50067BB8C /* NewGameScene.m */; };
@@ -28,11 +32,7 @@
 		D8FCAAAF18A2C73D004B93C1 /* Exhaust.sks in Resources */ = {isa = PBXBuildFile; fileRef = D8FCAAAD18A2C73D004B93C1 /* Exhaust.sks */; };
 		D8FCAAB018A2C73D004B93C1 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D8FCAAAE18A2C73D004B93C1 /* spark.png */; };
 		D8FCAAB818A2CEA1004B93C1 /* Spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = D8FCAAB718A2CEA1004B93C1 /* Spark.sks */; };
-		DC90502218A88B4D00AAA08A /* pipe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC90502018A88B4D00AAA08A /* pipe.mp3 */; };
-		DC90502318A88B4D00AAA08A /* punch.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC90502118A88B4D00AAA08A /* punch.wav */; };
 		DC90502518A88CC800AAA08A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC90502418A88CC800AAA08A /* AVFoundation.framework */; };
-		DC90502718A8999100AAA08A /* punch2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC90502618A8999100AAA08A /* punch2.mp3 */; };
-		DC90502918A89ADA00AAA08A /* punch3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC90502818A89ADA00AAA08A /* punch3.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D60948218AB3E03005AB89A /* wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wind.mp3; sourceTree = "<group>"; };
+		4D76BCA418AAE44B00151570 /* punch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = punch.mp3; sourceTree = "<group>"; };
+		4D76BCA718AAE5F400151570 /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin.mp3; sourceTree = "<group>"; };
+		4DDB426A18AB2082006D36E3 /* 04B_19__.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 04B_19__.ttf; sourceTree = "<group>"; };
 		D891AAEE18A701AD0067BB8C /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		D891AAEF18A701AD0067BB8C /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		D891AAF118A701D40067BB8C /* Obstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obstacle.h; sourceTree = "<group>"; };
 		D891AAF218A701D40067BB8C /* Obstacle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Obstacle.m; sourceTree = "<group>"; };
 		D891AAF418A884D50067BB8C /* NewGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewGameScene.h; sourceTree = "<group>"; };
 		D891AAF518A884D50067BB8C /* NewGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewGameScene.m; sourceTree = "<group>"; };
-		D8FCAA7018A2BB6B004B93C1 /* FlapFlap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlapFlap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8FCAA7018A2BB6B004B93C1 /* Flappy Doge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Doge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FCAA7318A2BB6B004B93C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8FCAA7518A2BB6B004B93C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D8FCAA7718A2BB6B004B93C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -76,11 +80,7 @@
 		D8FCAAAD18A2C73D004B93C1 /* Exhaust.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Exhaust.sks; sourceTree = "<group>"; };
 		D8FCAAAE18A2C73D004B93C1 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		D8FCAAB718A2CEA1004B93C1 /* Spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Spark.sks; sourceTree = "<group>"; };
-		DC90502018A88B4D00AAA08A /* pipe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pipe.mp3; path = Sounds/pipe.mp3; sourceTree = "<group>"; };
-		DC90502118A88B4D00AAA08A /* punch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = punch.wav; path = Sounds/punch.wav; sourceTree = "<group>"; };
 		DC90502418A88CC800AAA08A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		DC90502618A8999100AAA08A /* punch2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = punch2.mp3; path = Sounds/punch2.mp3; sourceTree = "<group>"; };
-		DC90502818A89ADA00AAA08A /* punch3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = punch3.mp3; path = Sounds/punch3.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,7 @@
 		D8FCAA7118A2BB6B004B93C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8FCAA7018A2BB6B004B93C1 /* FlapFlap.app */,
+				D8FCAA7018A2BB6B004B93C1 /* Flappy Doge.app */,
 				D8FCAA8B18A2BB6B004B93C1 /* FlapFlapTests.xctest */,
 			);
 			name = Products;
@@ -204,6 +204,7 @@
 		D8FCAABB18A2EA22004B93C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4DDB426A18AB2082006D36E3 /* 04B_19__.ttf */,
 				D8FCAAAD18A2C73D004B93C1 /* Exhaust.sks */,
 				D8FCAAAE18A2C73D004B93C1 /* spark.png */,
 				D8FCAAB718A2CEA1004B93C1 /* Spark.sks */,
@@ -214,10 +215,9 @@
 		DC90501F18A88B2600AAA08A /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				DC90502818A89ADA00AAA08A /* punch3.mp3 */,
-				DC90502618A8999100AAA08A /* punch2.mp3 */,
-				DC90502018A88B4D00AAA08A /* pipe.mp3 */,
-				DC90502118A88B4D00AAA08A /* punch.wav */,
+				4D76BCA718AAE5F400151570 /* coin.mp3 */,
+				4D76BCA418AAE44B00151570 /* punch.mp3 */,
+				4D60948218AB3E03005AB89A /* wind.mp3 */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -239,7 +239,7 @@
 			);
 			name = FlapFlap;
 			productName = FlapFlap;
-			productReference = D8FCAA7018A2BB6B004B93C1 /* FlapFlap.app */;
+			productReference = D8FCAA7018A2BB6B004B93C1 /* Flappy Doge.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D8FCAA8A18A2BB6B004B93C1 /* FlapFlapTests */ = {
@@ -274,7 +274,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D8FCAA6B18A2BB6B004B93C1 /* Build configuration list for PBXProject "FlapFlap" */;
+			buildConfigurationList = D8FCAA6B18A2BB6B004B93C1 /* Build configuration list for PBXProject "Flappy Doge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -297,14 +297,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC90502718A8999100AAA08A /* punch2.mp3 in Resources */,
 				D8FCAAAF18A2C73D004B93C1 /* Exhaust.sks in Resources */,
 				D8FCAAB018A2C73D004B93C1 /* spark.png in Resources */,
-				DC90502218A88B4D00AAA08A /* pipe.mp3 in Resources */,
-				DC90502918A89ADA00AAA08A /* punch3.mp3 in Resources */,
+				4DDB426B18AB2091006D36E3 /* 04B_19__.ttf in Resources */,
+				4D76BCA518AAE44B00151570 /* punch.mp3 in Resources */,
 				D8FCAA7E18A2BB6B004B93C1 /* InfoPlist.strings in Resources */,
+				4D76BCA818AAE5F400151570 /* coin.mp3 in Resources */,
 				D8FCAA8618A2BB6B004B93C1 /* Images.xcassets in Resources */,
-				DC90502318A88B4D00AAA08A /* punch.wav in Resources */,
+				4D60948318AB3E03005AB89A /* wind.mp3 in Resources */,
 				D8FCAAB818A2CEA1004B93C1 /* Spark.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,10 +449,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlapFlap/FlapFlap-Prefix.pch";
 				INFOPLIST_FILE = "FlapFlap/FlapFlap-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Flappy Doge";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -462,10 +464,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlapFlap/FlapFlap-Prefix.pch";
 				INFOPLIST_FILE = "FlapFlap/FlapFlap-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Flappy Doge";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -515,7 +519,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8FCAA6B18A2BB6B004B93C1 /* Build configuration list for PBXProject "FlapFlap" */ = {
+		D8FCAA6B18A2BB6B004B93C1 /* Build configuration list for PBXProject "Flappy Doge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8FCAA9A18A2BB6B004B93C1 /* Debug */,
